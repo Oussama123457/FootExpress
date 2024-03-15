@@ -1,0 +1,25 @@
+<h2>Classement</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Équipe</th>
+      <th>Points</th>
+      <th>Matchs joués</th>
+      <th>Gagnés</th>
+      <th>Nuls</th>
+      <th>Perdus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let equipe of classementData">
+      <td>{{ equipe.position }}</td>
+      <td>{{ equipe.team.name }}</td>
+      <td>{{ equipe.points }}</td>
+      <td>{{ equipe.all.played }}</td>
+      <td>{{ equipe.all.win }}</td>
+      <td>{{ equipe.all.draw }}</td>
+      <td>{{ equipe.all.lose }}</td>
+    </tr>
+  </tbody>
+</table>
